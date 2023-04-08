@@ -1,10 +1,8 @@
 from flask import Flask, jsonify
 from flask import request
 from model import recommend_workout
-from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
 
 
 @app.route("/", methods=["GET"])
