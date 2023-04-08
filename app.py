@@ -5,8 +5,8 @@ from model import recommend_workout
 app = Flask(__name__)
 
 
-@app.route("/", methods=["GET"])
-def get():
+@app.route("/")
+def index():
     return "Flask app is working!"
 
 
@@ -24,7 +24,3 @@ def recommend():
 
     if request.method == "GET":
         return "THIS IS A MESSAGE FROM /recommend_workout GET"
-
-
-if __name__ == "__main__":
-    app.run()
